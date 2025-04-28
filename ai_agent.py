@@ -26,7 +26,7 @@ Output:
             temperature=0.7,
             streaming=True,
             openai_api_key="lm-studio",
-            openai_api_base="http://10.0.16.150:1234/v1"
+            openai_api_base="http://192.168.1.0:1234/v1"
         )
         chain = LLMChain(llm=llm, prompt=pt)
         result = chain.run(user_input=user_input)
