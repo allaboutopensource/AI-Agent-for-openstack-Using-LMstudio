@@ -9,7 +9,7 @@ def project_exists(target_project):
     conn = openstack.connect(cloud='openstack')
     conn2 = conn.connect_as(username = os.environ.get('OS_USERNAME'), password = os.environ.get('OS_PASSWORD'))
     global cloud2
-    cloud2 = conn.connect_as_project('7b9b3c86a8ab4a6e9a1cdc8bb07ae190')
+    cloud2 = conn.connect_as_project('34dgf34dgf34gfhg3c867ae190')
     global project
     project = cloud2.identity.find_project(target_project)
     if not project:
